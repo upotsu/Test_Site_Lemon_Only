@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Test_Site_Lemon_Only/'
+  base: '/Test_Site_Lemon_Only/github/workflows/deploy.yml'
 })
