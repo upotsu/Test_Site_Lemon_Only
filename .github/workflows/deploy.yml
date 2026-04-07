@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -20,14 +21,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: npm
+          cache-dependency-path: lemon-react-site/package-lock.json
 
-      - name: Install
-        run: npm install
+      - name: Install dependencies
         working-directory: lemon-react-site
+        run: npm install
 
       - name: Build
-        run: npm run build
         working-directory: lemon-react-site
+        run: npm run build
 
       - uses: actions/configure-pages@v5
 
@@ -40,6 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v4
+      - id: deployment
+        uses: actions/deploy-pages@v4
