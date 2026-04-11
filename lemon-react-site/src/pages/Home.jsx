@@ -15,7 +15,7 @@ export default function Home() {
       <HeroVideo
         videoSrc={lemonSqueeze}
         eyebrow="見ただけで、口の奥がきゅっとする。"
-        title={<>レモンだけで<br />酸っぱくなるサイト。</>}
+        title={<>新しいレモン爆誕。</>}
         text="切る、絞る、滴る。レモンの刺激だけを視覚で味わう、2ページ構成のReactコンセプトサイト。"
         buttonText="もっと酸っぱくなる"
         onButtonClick={() => navigate('/experience')}
