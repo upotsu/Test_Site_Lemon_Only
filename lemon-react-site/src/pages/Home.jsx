@@ -15,37 +15,37 @@ export default function Home() {
       <HeroVideo
         videoSrc={lemonSqueeze}
         eyebrow="見ただけで、口の奥がきゅっとする。"
-        title={<>新しいレモン爆誕。</>}
-        text="切る、絞る、滴る。レモンの刺激だけを視覚で味わう、2ページ構成のReactコンセプトサイト。"
-        buttonText="もっと酸っぱくなる"
+        title={<>新しいレモン<br />
+	爆誕。</>}
+        text="切る、絞る、滴る。新時代のレモン刺激を味わう。"
+        buttonText="次ページへ"
         onButtonClick={() => navigate('/experience')}
       />
 
       <section className="section section--light">
         <div className="section-heading">
           <p className="eyebrow">VISUAL SOURNESS</p>
-          <h2>爽やかじゃなく、<br />あえて“すっぱさ”で刺す。</h2>
+          <h2>“すっぱさ”の刺激がここに。</h2>
           <p>
-            黄色の強さ、断面の湿度、滴る果汁、冷えた炭酸。レモンの情報だけで、
-            口の中に反応が起きるような構成にしています。
+            滴る果汁、冷えた炭酸。
           </p>
         </div>
 
         <div className="card-grid">
           <ImageCard
             image={lemonWater}
-            title="冷たさで刺す"
-            text="レモン水の透明感と果肉の白さで、喉ではなく舌に刺激が来る設計。"
+            title="凝縮した果実"
+            text="透明感と果肉の結晶、喉ではなく舌に刺激が来る設計。"
           />
           <ImageCard
             image={lemonTree}
-            title="空と黄色の対比"
-            text="空の青に対してレモンの黄色を浮かせ、視覚的な酸味を強めます。"
+            title="北部イタリアで育ったレモン"
+            text="酸味が強く引き締まった甘さをあなたへ。"
           />
           <ImageCard
             image={lemonDrink}
-            title="炭酸の湿度"
-            text="葉の深い緑と泡の細かさを混ぜて、爽快ではなく刺激的な印象へ。"
+            title="炭酸に合うレモン"
+            text="炭酸の爽快感に適した刺激的な酸味。"
           />
         </div>
       </section>
@@ -58,13 +58,12 @@ export default function Home() {
         </div>
         <div className="split-section__content">
           <p className="eyebrow">CUT / DRIP / SHIVER</p>
-          <h2>ページを開くたびに、<br />少しだけ顔がすぼむ。</h2>
+          <h2>果実がぎっしり。</h2>
           <p>
-            映像を背景として大胆に使いながら、文字は最小限に。あえて情報量を絞ることで、
-            レモンそのものの存在感を主役にしています。
+            手軽にレモンを味わいたかったってこと。
           </p>
           <button type="button" className="text-link" onClick={() => navigate('/experience')}>
-            SOUR ROOMへ進む →
+            次ページへ進む →
           </button>
         </div>
       </section>
